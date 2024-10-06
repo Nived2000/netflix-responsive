@@ -1,0 +1,564 @@
+/* Global Styles */
+body {
+    font-family: 'Bebas Neue', 'sans-serif'; /* Set the global font family */
+}
+
+/* Header Styles */
+header {
+    background:
+        linear-gradient(rgba(26, 25, 25, 0.5), rgba(26, 25, 25, 0.5)), /* Semi-transparent gradient over image */
+        url(/images/header-img.jpg); /* Background image */
+    height: 90vh; /* Header height set to 90% of the viewport height */
+    background-size: cover; /* Ensure the image covers the entire header */
+    background-position: center; /* Center the image */
+}
+
+/* Navbar Styles */
+.navbar {
+    justify-content: end; /* Align navigation items to the right */
+}
+
+.navbar img {
+    width: 70px;
+    height: auto; /* Preserve aspect ratio */
+}
+
+/* Sign-In Button Styles */
+.sign-in-button {
+    background-color: red;
+    color: white;
+    border-radius: 0.25rem;
+    border: none;
+    font-weight: 500;
+    font-size: smaller;
+    padding: 5px 8px;
+}
+
+.sign-in-button:hover {
+    background-color: white;
+    color: red;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    height: 70vh; /* Set height to 70% of the viewport height */
+    padding: 0 20px; /* Horizontal padding */
+    color: white; /* Text color */
+}
+
+.hero-title {
+    font-size: 3rem; /* Default font size */
+    font-weight: 900; /* Bold font */
+}
+
+.hero-first-p {
+    font-size: 1.5rem; /* Default font size */
+    font-weight: 500;
+}
+
+.hero-second-p {
+    font-size: 1.25rem; /* Default font size */
+    font-weight: 400;
+}
+
+/* Media Queries for Responsiveness */
+/* Adjust font sizes for smaller screens */
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-first-p {
+        font-size: 1.25rem;
+    }
+
+    .hero-second-p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-first-p {
+        font-size: 1.125rem;
+    }
+
+    .hero-second-p {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-first-p {
+        font-size: 1rem;
+    }
+
+    .hero-second-p {
+        font-size: 0.875rem;
+    }
+}
+
+/* Input Box Styles */
+.input-box {
+    width: 15rem;
+    border-radius: 13px;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Semi-transparent border */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 10px 15px; /* Padding for better spacing */
+    font-size: 1rem; /* Font size */
+    color: white; /* Text color */
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    backdrop-filter: blur(10px); /* Glass-like blur effect */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.input-box:focus {
+    border-color: rgba(255, 255, 255, 0.5); /* Highlight border on focus */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Increase shadow on focus */
+    background: rgba(255, 255, 255, 0.2); /* Slightly change background on focus */
+}
+
+/* Get Started Button Styles */
+.get-started-button {
+    width: 6rem;
+    background-color: red;
+    color: white;
+    border-radius: 0.25rem;
+    border: none;
+    font-weight: 500;
+    font-size: smaller;
+    padding: 5px 8px;
+}
+
+.get-started-button:hover {
+    background-color: white;
+    color: red;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Media Queries for Input Box and Get Started Button */
+/* Adjust sizes for responsiveness */
+@media (max-width: 1200px) {
+    .input-box {
+        width: 12.5rem;
+        height: 2rem;
+    }
+
+    .get-started-button {
+        font-size: smaller;
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .input-box {
+        width: 10.5rem;
+        font-size: small;
+    }
+}
+
+@media (max-width: 480px) {
+    .input-box {
+        width: 9rem;
+        height: 1rem;
+        font-size: x-small;
+    }
+
+    .get-started-button {
+        font-size: x-small;
+        height: 1rem;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+/* Purple Section Styles */
+.purple-section {
+    position: absolute;
+    color: rgb(255, 0, 0);
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+/* Container Styles */
+.container-md {
+    display: flex;
+    color: white;
+    font-weight: 500;
+    background: radial-gradient(circle at center, #141414, #2b2b2b, #b20710); /* Radial gradient background */}
+
+
+/* Styling for container-md images */
+.container-md img {
+    width: 150px; /* Set the width of images within container-md */
+    margin-top: 20px; /* Add space above the image */
+    margin-bottom: 20px; /* Add space below the image */
+}
+
+/* Styling for purple-first-p paragraph */
+.purple-first-p {
+    font-size: x-large; /* Set the font size to extra large */
+}
+
+/* Styling for purple-second-p paragraph */
+.purple-second-p {
+    font-size: large; /* Set the font size to large */
+}
+
+/* Styling for purple-writings anchor links */
+.purple-writings a {
+    color: white; /* Set the text color to white */
+    font-size: small; /* Set the font size to small */
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .container-md img {
+        width: 125px; /* Reduce the width of images for smaller screens */
+    }
+
+    .purple-first-p {
+        font-size: medium; /* Set the font size to medium for smaller screens */
+    }
+
+    .purple-second-p {
+        font-size: small; /* Set the font size to small for smaller screens */
+    }
+}
+
+/* Media query for screens with a maximum width of 480px */
+@media (max-width: 480px) {
+    .container-md img {
+        width: 75px; /* Further reduce the width of images for very small screens */
+        margin-top: 10px; /* Reduce the top margin */
+    }
+
+    .purple-first-p {
+        font-size: small; /* Set the font size to small for very small screens */
+    }
+
+    .purple-second-p {
+        font-size: small; /* Set the font size to small for very small screens */
+    }
+}
+
+/* Styling for the enjoy-section */
+.enjoy-section {
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the text color to white */
+}
+
+/* Specific styling for enjoy-section when used with a container class */
+.enjoy-section.container {
+    display: block; /* Set the container display to block */
+}
+
+/* Styling for section titles */
+.section-title {
+    text-align: center; /* Center-align the text */
+    font-size: 3rem; /* Set the font size to 3rem */
+    font-weight: 900; /* Set the font weight to bold */
+    margin-top: 0; /* Remove the default top margin */
+}
+
+/* Styling for section paragraphs */
+.section-p {
+    text-align: center; /* Center-align the text */
+    font-size: 1.5rem; /* Set the font size to 1.5rem */
+    font-weight: 400; /* Set the font weight to normal */
+    margin-top: 0; /* Remove the default top margin */
+}
+
+/* For smaller screens like tablets and mobile */
+@media (max-width: 992px) {
+    .section-title {
+
+        /* Slightly smaller font for tablets */
+        margin-top: 40px;
+        /* Add some top margin */
+    }
+
+    
+}
+@media (max-width: 768px) {
+    .section-title {
+
+        /* Slightly smaller font for tablets */
+        margin-top: 100px;
+        /* Add some top margin */
+    }
+
+    
+}
+
+/* For extra small screens like smartphones */
+@media (max-width: 576px) {
+    .section-title {
+
+        /* Even smaller font for mobile devices */
+        margin-top: 120px;
+        /* More top margin for small screens */
+    }
+    .section-p{
+        font-size: 0.5rem;
+    }
+
+
+}
+
+.children-section {
+    background: linear-gradient(135deg, #333, #000); /* Dark gradient background */
+    padding-top: 30px; /* Less padding on top */
+    padding-bottom: 60px; /* You can adjust this as needed */
+    color: white;
+}
+
+.c-section-title {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.section-p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .section-p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .c-section-title {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    .section-p {
+        font-size: 1.1rem;
+    }
+}
+
+.watch-section {
+    background: linear-gradient(135deg, #333, #000); /* Dark gradient background */
+    padding-top: 30px; /* Less padding on top */
+    padding-bottom: 60px; /* You can adjust this as needed */
+    color: white;
+}
+
+.c-section-title {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+.download-section {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#faq-section{
+    padding: 50px 120px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    
+}
+#faq-button{
+    background-color: rgb(77, 74, 74);
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  
+}
+@media (max-width: 768px){
+    #faq-button{
+        font-size: 1.25rem;
+    }
+}
+@media (max-width: 576px){
+    #faq-button{
+        font-size: 1.0rem;
+    }
+}
+#faq-button:hover{
+    color: #141414;
+    background-color: #a9a5a5;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: color 0.3s ease, color 0.3s ease;
+}
+
+/* Center the form and make it responsive */
+.faq-form-container {
+    display: flex;
+    justify-content: center;  /* Center the form horizontally */
+    margin-top: 20px;         /* Add space between the form and the FAQ buttons */
+    width: 100%;              /* Ensure the container spans the full width */
+  }
+  
+  .faq-form {
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;         /* Wrap the elements if needed for smaller screens */
+    max-width: 500px;        /* Limit the form width to make it more readable on large screens */
+    width: 100%;
+  }
+  
+  .faq-input-box {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    min-width: 200px;        /* Set a minimum width for the input field */
+    border-radius: 10px;
+  }
+  
+  .get-started-button {
+    padding: 5px 10px;
+    background-color: #d20909;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 104px;
+  }
+  
+  .get-started-button:hover {
+    background-color: #ffffff;
+    color: d20909;
+  }
+  
+  /* Ensure responsiveness for smaller screens */
+  @media (max-width: 576px) {
+    .faq-form {
+      flex-direction: column;   /* Stack the input and button vertically on small screens */
+      align-items: stretch;     /* Make the input and button take full width */
+    }
+  
+    .faq-input-box {
+      width: 100%;
+    }
+  
+    .get-started-button {
+      width: 100%;
+      height: auto;
+      margin-top: 10px;         /* Add some space between input and button */
+    }
+  }
+  .ready-to-watch{
+    margin-top: 10px;
+    margin-bottom: -18px;
+    font-size: 18px;
+  }
+  @media (max-width: 768px){
+    .ready-to-watch{
+        font-size: 16px;
+    }
+  }
+  @media (max-width: 576px){
+    .ready-to-watch{
+        font-size: 14px;
+    }
+  }
+  #small-faq {
+    display: none;
+  }
+  
+  @media (max-width: 576px) {
+    /* Show 'small-faq' for small screens */
+    #small-faq {
+      display: block;
+    }
+  
+    /* Hide 'big-faq' for small screens */
+    #big-faq {
+      display: none;
+    }
+  }
+  #footer{
+    padding: 50px 70px;
+    background: black;
+    cursor: pointer;
+  }
+  #footer-row{
+    font-weight: 400;
+    width: 100%;
+    color: #cdc7c7;
+    display: flex;
+    text-decoration: underline;
+  }
+  /* Sign In Button */
+
+
+/* Form Style */
+.email-form {
+    gap: 10px;
+    align-items: center;
+}
+
+/* Hero Section Title */
+
+
+/* TV Image Style */
+.tv-image {
+    width: 500px;
+}
+/* Watch Image Style */
+.watch-image {
+    width: 500px;
+}
+
+/* Download Image Style */
+.download-image {
+    width: 500px;
+}
+
+/* Children Image Style */
+.children-image {
+    width: 500px;
+}
+
+/* Section Title */
+/* FAQ Heading Styles */
+#big-faq, #small-faq {
+    font-weight: 700;
+}
+
+/* FAQ Button Style */
+
+
+/* Questions Link Style */
+.questions-link {
+    color: #cdc7c7;
+}
+
+/* Footer Text Style */
+.footer-text {
+    color: #cdc7c7;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
